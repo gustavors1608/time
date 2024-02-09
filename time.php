@@ -54,24 +54,24 @@ class Time
 }
 
 
-// Criando uma instância da classe Time
-$time = new Time();
+// // Criando uma instância da classe Time
+// $time = new Time();
 
-// Exemplo de conversão de horário local (BRT) para UTC
-$brt_datetime = '2024-02-09 12:30:00';
-$utc_datetime = $time->convert_brt_utc($brt_datetime);
-echo "Horário BRT ($brt_datetime) convertido para UTC: $utc_datetime\n\n";
+// // Exemplo de conversão de horário local (BRT) para UTC
+// $brt_datetime = '2024-02-09 12:30:00';
+// $utc_datetime = $time->convert_brt_utc($brt_datetime);
+// echo "Horário BRT ($brt_datetime) convertido para UTC: $utc_datetime\n\n";
 
-// Exemplo de conversão de horário UTC para local (BRT)
-$utc_datetime = '2024-02-09 15:30:00';
-$brt_datetime = $time->convert_utc_brt($utc_datetime);
-echo "Horário UTC ($utc_datetime) convertido para BRT: $brt_datetime\n\n";
+// // Exemplo de conversão de horário UTC para local (BRT)
+// $utc_datetime = '2024-02-09 15:30:00';
+// $brt_datetime = $time->convert_utc_brt($utc_datetime);
+// echo "Horário UTC ($utc_datetime) convertido para BRT: $brt_datetime\n\n";
 
-// Exemplo de obtenção da data e hora atual em UTC
-$current_utc_time = $time->get_time_utc();
-echo "Data e Hora Atuais em UTC: $current_utc_time\n\n";
+// // Exemplo de obtenção da data e hora atual em UTC
+// $current_utc_time = $time->get_time_utc();
+// echo "Data e Hora Atuais em UTC: $current_utc_time\n\n";
 
-// Exemplo de obtenção do fuso horário pelo IP (substitua 'CLIENT_IP' pelo IP real do cliente)
-$client_ip = 'CLIENT_IP';
-$client_timezone = $time->get_timezone_ip($client_ip);
-echo "Fuso Horário do Cliente: $client_timezone\n";
+// // Exemplo de obtenção do fuso horário pelo IP (substitua 'CLIENT_IP' pelo IP real do cliente)
+// $client_ip = 'CLIENT_IP';
+// $client_timezone = $time->get_timezone_ip($client_ip);
+// echo "Fuso Horário do Cliente: $client_timezone\n";
