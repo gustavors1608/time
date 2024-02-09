@@ -1,6 +1,6 @@
 <?php
 
-class time
+class Time
 {
     protected $brt_time_zone;
     protected $utc_time_zone;
