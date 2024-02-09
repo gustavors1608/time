@@ -1,6 +1,6 @@
 <?php
 
-class Time
+class time
 {
     protected $brt_time_zone;
     protected $utc_time_zone;
@@ -44,12 +44,12 @@ class Time
             $ipinfo_data = json_decode($ipinfo_response, true);
 
             if (isset($ipinfo_data['timezone'])) {
-                return new DateTimeZone($ipinfo_data['timezone']).getName();
+                return new DateTimeZone($ipinfo_data['timezone']);
             }
         }
 
         // Se não for possível obter o fuso horário, retorna o fuso horário padrão UTC
-        return $this->utc_time_zone.getName();
+        return $this->utc_time_zone;
     }
 }
 
